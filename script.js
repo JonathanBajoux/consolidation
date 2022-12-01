@@ -2,7 +2,7 @@ const collection = [
     {
         name: "harry potter",
         director: "David Heyman",
-        releaseYear: 2001 - 2011,
+        releaseYear: "2001-2011",
         picture: "image\harry-potter-logo-big__w1200.jpg",
         genre: ["fantastique"],
         cast: [
@@ -81,7 +81,7 @@ const collection = [
     {
         name: "Back to the Future",
         director: "Robert Zemeckis",
-        releaseYear: 1985 - 1990,
+        releaseYear: "1985-1990",
         picture: "image\1894233.jpg",
         genre: ["science-fiction"],
         cast: [
@@ -94,7 +94,7 @@ const collection = [
     {
         name: "Pirates des Caraïbes",
         director: "Walt Disney Pictures",
-        releaseYear: 2003 - 2017.,
+        releaseYear: "2003-2017",
         picture: "image\scale.jpg",
         genre: ["Aventure ", "Action ", "Fantastique"],
         cast: [
@@ -141,11 +141,27 @@ function listElement() {
         let name = document.createElement("h2");
         name.innerText = element.name;
         article.appendChild(name)
+
         
         section.appendChild(article)
         main.appendChild(section)
         document.body.insertBefore(main, document.getElementsByTagName("footer")[0])
+        
+        let director = document.createElement("h3")
+        director.innerText = element.director;
+        article.appendChild(director)
 
+        let realeaseYear = document.createElement("h4")
+        realeaseYear.innerText = element.releaseYear;
+        article.appendChild(realeaseYear)
+
+        let genre = document.createElement("h5")
+        genre.innerText = element.genre;
+        article.appendChild(genre)
+
+        let cast = document.createElement("p")
+        cast.innerText = element.cast;
+        article.appendChild(cast)
     }
 
 }
