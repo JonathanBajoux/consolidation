@@ -3,7 +3,7 @@ const collection = [
         name: "harry potter",
         director: "David Heyman",
         releaseYear: "2001-2011",
-        picture: "image\harry-potter-logo-big__w1200.jpg",
+        picture: "../image/harry-potter-logo-big__w1200.jpg",
         genre: ["fantastique"],
         cast: [
             "Daniel Radcliffe",
@@ -17,7 +17,7 @@ const collection = [
         name: "avatar",
         director: "James Cameron",
         releaseYear: 2009,
-        picture: "image\Avatar.jpg",
+        picture: "../image/Avatar.jpg",
         genre: ["science-fiction"],
         cast: [
             "Sam Worthington",
@@ -30,7 +30,7 @@ const collection = [
         name: "Fast and Furious",
         director: "Rob Cohen",
         releaseYear: 2001,
-        picture: "image\the-fast-and-the-furious-movie-poster.jpg",
+        picture: "../image/the-fast-and-the-furious-movie-poster.jpg",
         genre: ["Action"],
         cast: [
             "Vin Diesel",
@@ -43,7 +43,7 @@ const collection = [
         name: "Marvel's Avengers",
         director: "Square Enix Europe",
         releaseYear: 2020,
-        picture: "image\20217231555195_1.jpg",
+        picture: "../image/20217231555195_1.jpg",
         genre: ["Action-aventure"],
         cast: [
             "Iron Man : Stéphane Roux",
@@ -56,7 +56,7 @@ const collection = [
         name: "one piece",
         director: ["Konosuke Uda (1999–2006)", "Munehisa Sakai (2006–2008)", "Hiroaki Miyamoto (2008-2014)", "Toshinori Fukazawa (2014-2019)", "Tatsuya Nagamine (depuis 2019)"],
         releaseYear: 1999,
-        picture: "image\224a775f80315460af88e759c753bb03.jpg",
+        picture: "../image/224a775f80315460af88e759c753bb03.jpg",
         genre: ["Nekketsu", "aventure", "comédie", "drame", "fantasy", "humour", "satire"],
         cast: [
             "Monkey D. Luffy: Mayumi Tanaka",
@@ -69,7 +69,7 @@ const collection = [
         name: "cyberpunk 2077",
         director: "CD Projekt RED",
         releaseYear: 2020,
-        picture: "image\cyberpunk-next-gen_01679296.jpg",
+        picture: "../image/cyberpunk-next-gen_01679296.jpg",
         genre: ["Action-RPG"],
         cast: [
             "V: Julie Dray",
@@ -82,7 +82,7 @@ const collection = [
         name: "Back to the Future",
         director: "Robert Zemeckis",
         releaseYear: "1985-1990",
-        picture: "image\1894233.jpg",
+        picture: "../image/1894233.jpg",
         genre: ["science-fiction"],
         cast: [
             "Marty McFly: Michael J. Fox",
@@ -95,7 +95,7 @@ const collection = [
         name: "Pirates des Caraïbes",
         director: "Walt Disney Pictures",
         releaseYear: "2003-2017",
-        picture: "image\scale.jpg",
+        picture: "../image/scale.jpg",
         genre: ["Aventure ", "Action ", "Fantastique"],
         cast: [
             "Jack Sparrow: Johnny Depp",
@@ -108,7 +108,7 @@ const collection = [
         name: "iron man",
         director: "Jon Favreau",
         releaseYear: 2008,
-        picture: "image\Iron_Man-108960873-large.jpg",
+        picture: "../image/Iron_Man-108960873-large.jpg",
         genre: ["Super-héros"],
         cast: [
             "Robert Downey Jr.: Tony Stark",
@@ -121,7 +121,7 @@ const collection = [
         name: "La Brea",
         director: "David Appelbaum",
         releaseYear: 2021,
-        picture: "image\La_Brea_Serie_de_TV-465732072-large.jpg",
+        picture: "../image/La_Brea_Serie_de_TV-465732072-large.jpg",
         genre: ["Drame", "science-fiction"],
         cast: [
             "Chiké Okonkwo: Ty Coleman",
@@ -136,19 +136,20 @@ function listElement() {
     let main = document.createElement("main");
     let section = document.createElement("section");
 
-    
+
 
     for (let element of collection) {
         let article = document.createElement("article");
         article.className = element.name;
+
         let name = document.createElement("h2");
         name.innerText = element.name;
         article.appendChild(name)
 
         let img = document.createElement("img");
-        img.setAttribute("src",element.picture);
+        img.setAttribute("src", element.picture);
         article.appendChild(img)
-        
+
         let director = document.createElement("h3")
         director.innerText = element.director;
         article.appendChild(director)
