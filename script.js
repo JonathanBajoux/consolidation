@@ -136,16 +136,18 @@ function listElement() {
     let main = document.createElement("main");
     let section = document.createElement("section");
 
+    
+
     for (let element of collection) {
         let article = document.createElement("article");
+        article.className = element.name;
         let name = document.createElement("h2");
         name.innerText = element.name;
         article.appendChild(name)
 
-        
-        section.appendChild(article)
-        main.appendChild(section)
-        document.body.insertBefore(main, document.getElementsByTagName("footer")[0])
+        let img = document.createElement("img");
+        img.setAttribute("src",element.picture);
+        article.appendChild(img)
         
         let director = document.createElement("h3")
         director.innerText = element.director;
@@ -162,6 +164,10 @@ function listElement() {
         let cast = document.createElement("p")
         cast.innerText = element.cast;
         article.appendChild(cast)
+
+        section.appendChild(article)
+        main.appendChild(section)
+        document.body.insertBefore(main, document.getElementsByTagName("footer")[0])
     }
 
 }
