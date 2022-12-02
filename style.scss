@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    background: linear-gradient(130deg, goldenrod, aqua);
+
+    h1 {
+        display: flex;
+        background-color: cadetblue;
+        justify-content: center;
+        font-size: 5vw;
+    }
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+
+    article {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        border: solid 2px red;
+        font-size: 1rem;
+        margin: 5%;
+        border-radius: 2vw;
+
+        img {
+            width: 25%;
+            border-radius: 100%;
+
+        }
+
+        h3, h4, h5, p{
+            display: flex;
+            margin-left: 28%;
+        }
+    }
+}

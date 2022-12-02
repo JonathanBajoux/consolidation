@@ -1,1 +1,41 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  background: linear-gradient(130deg, goldenrod, aqua);
+}
+main h1 {
+  display: flex;
+  background-color: cadetblue;
+  justify-content: center;
+  font-size: 5vw;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+section article {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  border: solid 2px red;
+  font-size: 1rem;
+  margin: 5%;
+  border-radius: 2vw;
+}
+section article img {
+  width: 25%;
+  border-radius: 100%;
+}
+section article h3, section article h4, section article h5, section article p {
+  display: flex;
+  margin-left: 28%;
+}/*# sourceMappingURL=style.css.map */

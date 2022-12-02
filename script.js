@@ -136,11 +136,14 @@ function listElement() {
     let main = document.createElement("main");
     let section = document.createElement("section");
 
+        let bigTitle = document.createElement("h1");
+        bigTitle.textContent = "collection movie series games";
+        main.appendChild(bigTitle);
 
 
     for (let element of collection) {
         let article = document.createElement("article");
-        article.className = element.name;
+        article.className = element.name.replace(" ", "-");
 
         let name = document.createElement("h2");
         name.innerText = element.name;
