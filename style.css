@@ -29,13 +29,16 @@ section article {
   border: solid 2px red;
   font-size: 1rem;
   margin: 5%;
-  border-radius: 2vw;
+  border-radius: 3vw;
 }
 section article img {
   width: 25%;
-  border-radius: 100%;
+  border-radius: 3vw;
+  top: 30vh;
 }
 section article h3, section article h4, section article h5, section article p {
-  display: flex;
-  margin-left: 28%;
+  margin-left: 28vw;
+}
+section article h2 {
+  bottom: 10vw;
 }/*# sourceMappingURL=style.css.map */

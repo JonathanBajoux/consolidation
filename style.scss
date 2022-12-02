@@ -31,17 +31,21 @@ section {
         border: solid 2px red;
         font-size: 1rem;
         margin: 5%;
-        border-radius: 2vw;
+        border-radius: 3vw;
 
         img {
             width: 25%;
-            border-radius: 100%;
+            border-radius: 3vw;
+            top: 30vh;
 
         }
 
-        h3, h4, h5, p{
-            display: flex;
-            margin-left: 28%;
+        h3, h4, h5, p {
+            margin-left: 28vw;
+        }
+
+        h2 {
+            bottom: 10vw;
         }
     }
 }
