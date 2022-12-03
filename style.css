@@ -34,9 +34,21 @@ section article {
 }
 section article img {
   grid-area: 2/1/3/2;
-  width: 25%;
+  width: 80%;
   border-radius: 3vw;
   margin-left: 3%;
+  margin-top: -45%;
+}
+section article h2 {
+  grid-area: 1/1/2/2;
+  margin-left: 15%;
+  margin-top: 8%;
+  border: solid 1px black;
+  height: 20%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 section article h3 {
   grid-area: 1/2/2/3;
@@ -45,23 +57,28 @@ section article h3 {
   margin-top: 2%;
   margin-right: 5%;
   background-size: 2%;
+  border: solid 1px green;
+  width: 15vw;
 }
 section article h4 {
   grid-area: 1/2/2/3;
+  margin: 30%;
 }
 section article h5 {
   grid-area: 2/2/3/3;
   margin-top: 1%;
   background-color: sienna;
   border-radius: 2vw;
+  border: solid 1px black;
+  width: 5%;
+  height: 5%;
 }
 section article p {
   grid-area: 2/2/3/3;
   margin-top: 9%;
   background-color: sienna;
   margin-right: 45%;
-}
-section article h2 {
-  margin-left: 2%;
-  grid-area: 1/1/2/2;
+  border: solid 1px black;
+  width: 0%;
+  height: 0%;
 }/*# sourceMappingURL=style.css.map */

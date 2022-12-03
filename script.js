@@ -30,7 +30,7 @@ const collection = [
         name: "Fast and Furious",
         director: "Rob Cohen",
         releaseYear: 2001,
-        picture: "../image/the-fast-and-the-furious-movie-poster.jpg",
+        picture: "../image/the-fast-and-the-furious-movie-p.jpg",
         genre: ["Action"],
         cast: [
             "Vin Diesel",
@@ -121,7 +121,7 @@ const collection = [
         name: "La Brea",
         director: "David Appelbaum",
         releaseYear: 2021,
-        picture: "../image/La_Brea_Serie_de_TV-465732072-large.jpg",
+        picture: "../image/La_Brea_Serie_de_TV-465732072-la.jpg",
         genre: ["Drame", "science-fiction"],
         cast: [
             "Chiké Okonkwo: Ty Coleman",
